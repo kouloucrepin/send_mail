@@ -1,6 +1,5 @@
-render("doc_setup.qmd", output_format = "html_document")
 library(rmarkdown)
-
+render("doc_setup.qmd", output_format = "html_document")
 library(emayili)
 
 

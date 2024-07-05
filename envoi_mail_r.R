@@ -14,7 +14,7 @@ my_rmd_message <- envelope() |>
   from(Sys.getenv("GMAIL_USERNAME")) |>
   to(Sys.getenv("GMAIL_USERNAME"),"crepinkoulo@gmail.com") |>
   subject("Email from an R Markdown file") |>
-  render("doc_setup.html")
+  render("docsetup.html")
 
 
 smtp(my_rmd_message, verbose = TRUE)

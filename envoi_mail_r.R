@@ -3,6 +3,7 @@ library(rmarkdown)
 
 render("doc_setup.qmd", output_format = "html_document")
 print(Sys.getenv("GMAIL_USERNAME"))
+print(Sys.getenv("GMAIL_PASSWORD"))
 smtp <- server(
   host = "smtp.gmail.com",
   port = 587,

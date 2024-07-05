@@ -2,15 +2,15 @@ library(emayili)
 library(rmarkdown)
 
 render("doc_setup.qmd", output_format = "html_document")
-print(Sys.getenv("GMAIL_USERNAME"))
-print(Sys.getenv("GMAIL_PASSWORD"))
+
 smtp <- server(
   host = "smtp.gmail.com",
   port = 587,
   username = Sys.getenv("GMAIL_USERNAME"),
   password = Sys.getenv("GMAIL_PASSWORD")
 )
-
+print(Sys.getenv("GMAIL_USERNAME"))
+print(Sys.getenv("GMAIL_PASSWORD"))
 
 
 my_rmd_message <- envelope() |>

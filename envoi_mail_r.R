@@ -9,8 +9,7 @@ smtp <- server(
   username = Sys.getenv("GMAIL_USERNAME"),
   password = Sys.getenv("GMAIL_PASSWORD")
 )
-print(Sys.getenv("GMAIL_USERNAME"))
-print(Sys.getenv("GMAIL_PASSWORD"))
+
 
 
 my_rmd_message <- envelope() |>
@@ -19,7 +18,8 @@ my_rmd_message <- envelope() |>
   subject("Email from an R Markdown file") |>
   render("doc_setup.html")
 
-
+print(Sys.getenv("GMAIL_USERNAME"))
+print(Sys.getenv("GMAIL_PASSWORD"))
 
 smtp(my_rmd_message, verbose = TRUE)
 

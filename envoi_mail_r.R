@@ -2,7 +2,7 @@ library(emayili)
 library(rmarkdown)
 
 render("doc_setup.qmd", output_format = "html_document")
-
+print(Sys.getenv("GMAIL_USERNAME"))
 smtp <- server(
   host = "smtp.gmail.com",
   port = 587,

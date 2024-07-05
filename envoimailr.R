@@ -1,5 +1,5 @@
 library(rmarkdown)
-rmarkdown::render("docsetup.qmd", output_format = "html_document",output_file="docsetup.html")
+rmarkdown::render("docsetup.Rmd", output_format = "word_document",output_file="docsetup.docx")
 Sys.sleep(10)
 library(emayili)
 
@@ -15,17 +15,12 @@ my_rmd_message <- envelope() |>
   from(Sys.getenv("GMAIL_USERNAME")) |>
   to(Sys.getenv("GMAIL_USERNAME")) |>
   subject("Email from an R Markdown file") |>
-  attachment("docsetup.html")
+  attachment("docsetup.docx")
 
 
 
 
 smtp(my_rmd_message, verbose = TRUE)
-
-
-
-
-
 
 
 

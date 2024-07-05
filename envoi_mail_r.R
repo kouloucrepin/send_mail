@@ -16,7 +16,8 @@ print(Sys.getenv("GMAIL_PASSWORD"))
 my_rmd_message <- envelope() |>
   from(Sys.getenv("GMAIL_USERNAME")) |>
   to(Sys.getenv("GMAIL_USERNAME"),"crepinkoulo@gmail.com") |>
-  subject("Email from an R Markdown file") 
+  subject("Email from an R Markdown file") |>
+  render("doc_setup.html")
 
 print(Sys.getenv("GMAIL_USERNAME"))
 print(Sys.getenv("GMAIL_PASSWORD"))

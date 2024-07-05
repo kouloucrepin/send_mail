@@ -10,7 +10,8 @@ smtp <- server(
   password = Sys.getenv("GMAIL_PASSWORD")
 )
 
-
+print(Sys.getenv("GMAIL_USERNAME"))
+print(Sys.getenv("GMAIL_PASSWORD"))
 
 my_rmd_message <- envelope() |>
   from(Sys.getenv("GMAIL_USERNAME")) |>

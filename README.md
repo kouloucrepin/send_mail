@@ -1,8 +1,11 @@
 ## Description du Projet : Automatisation de l'Envoi d'E-mails avec R
 
+
 ### 1. Introduction
 
 Ce projet a été conçu pour automatiser l'envoi d'e-mails en utilisant le langage de programmation R. L'automatisation des e-mails est essentielle pour améliorer l'efficacité des communications, que ce soit pour des notifications, des rappels ou des campagnes marketing. Ce projet vise à simplifier le processus d'envoi d'e-mails en permettant aux utilisateurs d'envoyer des messages personnalisés à plusieurs destinataires en quelques clics.
+
+<img src="OIP.jpg" alt="Image de téléchargement" width="900" height="400">
 
 ### 2. Objectifs du Projet
 
